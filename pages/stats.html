@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notera</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../sass/styles.css">
+  <link rel="stylesheet" type="text/css" href="../sass/stat.css">
+</head>
+<body>
+
+<div class="header">
+
+  <div class="heading">Notera</div>
+  <div>
+    <a href="profile.html">
+      <div class="profile-container">
+        <img src="../img/img.png" alt="Profile photo">
+      </div>
+    </a>
+    <a href="signin.html">
+      <div class="profile-container">
+        <span id="username">Sign out</span>
+      </div>
+    </a>
+  </div>
+</div>
+
+
+<div class="app-wrapper">
+
+  <div class="navbar">
+    <div class="navbar-wrapper">
+      <div class="navbar-content" >
+        <a href="index.html"> Головна</a>
+
+      </div>
+      <div class="navbar-content">
+        <a href="search.html">
+          Пошук
+        </a>
+
+      </div>
+<!--      <div class="navbar-content">-->
+<!--        Друзі-->
+<!--      </div>-->
+      <div class="navbar-content">
+        <a href="stats.html">
+          Статистика
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="stat-content">
+      <div class="page-header">
+        <span class="page-title">Статистика</span>
+      </div>
+      <div class="post-counter">
+        <h2 id="counter">З вашого профілю було відправлено постів: <span class="hits">1</span> </h2>
+<!--        <label class="stat-font">1</label>-->
+      </div>
+
+      <div class="stat-edited-posts">
+        <h2>Редаговані повідомлення</h2>
+        <div class="edited-item">
+          <a href="post.html">
+          <div class="id">
+              Post1
+          </div>
+            </a>
+          <a href="profile.html">
+            <div class="user-name">Пальчевський</div>
+          </a>
+
+          <div class="edited-date">28.14.88</div>
+        </div>
+      </div>
+      <div class="stat-edited-posts">
+        <div class="edited-item">
+          <a href="post.html">
+            <div class="id">
+              Post2
+            </div>
+          </a>
+          <a href="profile.html">
+            <div class="user-name">Пальчевський</div>
+          </a>
+          <div class="edited-date">22.14.88</div>
+        </div>
+      </div>
+
+      <div class="stat-edited-posts">
+        <div class="edited-item">
+          <a href="post.html">
+            <div class="id">
+              Post3
+            </div>
+          </a>
+          <a href="profile.html">
+            <div class="user-name">Пальчевський</div>
+          </a>
+
+          <div class="edited-date">11.14.88</div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="sidebar">
+    <div class="sidebar-wrapper">
+      <form id="form">
+        <input
+          type="text"
+          id="search"
+          placeholder="Введіть тег"
+        />
+        <button>Search</button>
+      </form>
+
+      <div class="sidebar-content">
+
+        <h2>Останні зміни</h2>
+        <div class="last-change-wrapper">
+          <div class="sidebar-content-post">
+            <a href="post.html">
+              POST1
+            </a>
+          </div>
+          <div class="sidebar-content-post">
+            <a href="post.html">
+              POST2
+            </a>
+          </div>
+        </div>
+
+        <div>
+
+          <h3>Останні люди які редагували</h3>
+          <div class="last-people-wrapper">
+            <div class="sidebar-content-people">
+              <a href="profile.html">
+                Володя
+              </a>
+            </div>
+            <div class="sidebar-content-people">
+              <a href="profile.html">
+                Людина 2
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--<footer class="footer">-->
+<!--  <div class="footer-right-social">-->
+<!--    <a href="https://www.facebook.com/"><img src="img/footer/facebook.svg" alt=""></a>-->
+<!--    <a href="https://www.instagram.com/"><img src="img/footer/instagram.svg" alt=""></a>-->
+<!--  </div>-->
+<!--  <div class="footer-left">-->
+<!--    <div class="footer-links">-->
+<!--      <a class="link-1" href="#">About</a>-->
+<!--      <a href="#">Contact us</a>-->
+<!--    </div>-->
+<!--    <div class="copyright">Notera &copy; 2021</div>-->
+<!--  </div>-->
+<!--</footer>-->
+</body>
+</html>
