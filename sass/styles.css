@@ -17,6 +17,7 @@ body {
   margin: 0;
   padding: 0;
   /*overflow: hidden;*/
+  overflow-x: hidden;
 }
 
 ol, ul {
@@ -328,28 +329,69 @@ button:hover {
 .navbar-wrapper{
   position: fixed;
   width: 15%;
+
 }
-.navbar-content{
+.navbar-content {
   border-radius: 30px;
   background-color: #c3a2fa;
-  width: 60%;
+  width: 150px;
   height: 8%;
   margin: 15px auto;
   padding: 25px;
   text-align: center;
-  font-family: sans-serif ;
+  font-family: sans-serif;
   cursor: pointer;
   font-size: 20px;
+
+
 }
 
+.header-navbar-content{
+  display: none;
+}
+.header1-navbar-content{
+  display: none;
+}
+@media screen and (max-width: 1390px) {
+  .sidebar-wrapper
+  {display: none}
+  .navbar-wrapper{
+    display: none;
+  }
+  .app-wrapper{
+    display: grid;
+    grid-template-areas:
+    "c";
+    grid-template-columns:1fr;
+    width: 100%;
+  }
+  .header{
+  }
+  .header-navbar-content{
+    display: flex;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header-navbar-content{
+    display: none;
+  }
+  .header1-navbar-content{
+    display: flex;
+  }
 
+}
+/*@media screen and (min-width: 1280px) {*/
+/*  body {*/
+/*    font-size: 100%;*/
+/*  }*/
+/*}*/
 .main-content {
   grid-area: c;
 
   /*overflow-y: auto;*/
   /*height: 80vh;*/
-border: 1px solid #222;
-border-bottom: none;
+  border: 1px solid #222;
+  border-bottom: none;
   border-top: none;
   min-height: 90vh;
 }
@@ -512,7 +554,7 @@ input:focus, button:focus {
   font-family: "Rockwell Extra Bold";
 
 }
- .ann-name:hover{
+.ann-name:hover{
   text-decoration: underline;
   cursor: pointer;
 
@@ -568,7 +610,7 @@ input:focus, button:focus {
 /*  font-style: italic;*/
 /*}*/
 .post-user-data{
- display: inherit;
+  display: inherit;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
