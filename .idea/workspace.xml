@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="91b46367-dda8-4975-8cd9-3be2d246cfcc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +33,7 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="javascript.karma.karma_node_package_dir" value="" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JS_webstorm/Front-end" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -72,6 +71,20 @@
       <workItem from="1616487065678" duration="29717000" />
       <workItem from="1616577373990" duration="5998000" />
       <workItem from="1616668068285" duration="177000" />
+      <workItem from="1616770948824" duration="9000" />
+      <workItem from="1617045694538" duration="3000" />
+      <workItem from="1617089873185" duration="595000" />
+      <workItem from="1617110734354" duration="602000" />
+      <workItem from="1617557397428" duration="697000" />
+      <workItem from="1617723922127" duration="1080000" />
+      <workItem from="1617823355889" duration="5000" />
+      <workItem from="1618220385499" duration="5000" />
+      <workItem from="1618233967809" duration="552000" />
+      <workItem from="1618299581564" duration="2000" />
+      <workItem from="1618395422262" duration="28000" />
+      <workItem from="1618503416723" duration="51000" />
+      <workItem from="1618652161103" duration="46000" />
+      <workItem from="1618823808049" duration="14000" />
     </task>
     <servers />
   </component>
@@ -87,10 +100,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="738" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616527011894" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1616442761003">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1617557418629">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1616442761003" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617557418629" />
     <state x="559" y="164" key="SettingsEditor" timestamp="1616591227239">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
