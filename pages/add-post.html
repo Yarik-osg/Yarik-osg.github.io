@@ -11,14 +11,37 @@
 <body>
 
 <div class="header">
+  <div class="heading">
+    Notera</div>
+  <div class="header-navbar-content">
+    <a href="index.html"> Головна</a>
+  </div>
+  <div class="header-navbar-content">
+    <a href="search.html">
+      Пошук
+    </a>
+  </div>
+  <!--      <div class="navbar-content">-->
+  <!--        Друзі-->
+  <!--      </div>-->
+  <div class="header-navbar-content">
+    <a href="stats.html">
+      Статистика
+    </a>
+  </div>
+  <div class="header1-navbar-content">
+    <a href="stats.html">
+      . . .
+    </a>
+  </div>
 
-  <div class="heading">Notera</div>
   <div>
     <a href="profile.html">
       <div class="profile-container">
         <img src="../img/img.png" alt="Profile photo">
       </div>
     </a>
+
     <a href="signin.html">
       <div class="profile-container">
         <span id="username">Sign out</span>
@@ -26,6 +49,7 @@
     </a>
   </div>
 </div>
+
 
 <div class="edit-profile-content">
   <div class="caption">Post</div>
@@ -38,13 +62,16 @@
           <tbody>
           <tr>
             <td class="edit-title">Тема:</td>
-            <td><input type="text" class="profileInputBox"/></td>
+            <td><input type="text" class="profileInputBox" id="NoteName"/></td>
           </tr>
           <tr>
-            <td class="edit-title">Тег:</td>
-            <td><input type="text" class="profileInputBox"/></td>
+            <td class="edit-title">Кількість користувачів:</td>
+            <td><input type="text" class="profileInputBox" id="NoteCount"/></td>
           </tr>
           <tr>
+            <td class="edit-title">Користувач:</td>
+            <td><input type="text" class="profileInputBox" id="NoteUser"/></td>
+          </tr>
           </tbody>
         </table>
       </div>
@@ -54,7 +81,7 @@
           </tr>
           <tr>
             <td class="edit-title">Текст:</td>
-            <td><textarea class="profileInputBox"></textarea></td>
+            <td><textarea class="profileInputBox" id="NoteDesc"></textarea></td>
           </tr>
           </tbody>
         </table>
@@ -62,7 +89,7 @@
     </form>
   </div>
   <div id="profile-edit-save">
-    <a href="profile.html">
+    <a>
       <button id="editSave">Додати(Змінити) пост</button>
     </a>
 
@@ -83,4 +110,36 @@
   </div>
 </footer>
 </body>
+<script>
+  document.getElementById("editSave").addEventListener("click", grabData);
+  function grabData() {
+    const storedName=document.getElementById("NoteName").value
+    const storedDescription=document.getElementById("NoteDesc").value
+    const storedCountUser=document.getElementById("NoteCount").value
+    const storedUser=document.getElementById("NoteUser").value
+    addUser(storedName,storedDescription,storedCountUser,storedUser)
+    console.log(storedName,storedDescription,storedCountUser,storedUser)
+  }
+  function addUser(storedName,storedDescription,storedCountUser,storedUser) {
+    const Data = {
+      name: storedName,
+      description: storedDescription,
+      count_of_users: storedCountUser,
+      id_users: storedUser
+    };
+    console.log(Data)
+    const jsonString = JSON.stringify(Data);
+    const request = new XMLHttpRequest();
+    request.open("POST", "http://127.0.0.1:8082/note", true);
+    request.setRequestHeader("Content-Type", "application/json");
+    request.onload = function () {
+      if (this.status === 200) {
+        const note = JSON.parse(this.responseText);
+        console.log(note);
+        window.location.href="profile.html"
+      }
+    }
+    request.send(jsonString)
+  }
+</script>
 </html>
