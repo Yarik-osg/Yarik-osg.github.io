@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="91b46367-dda8-4975-8cd9-3be2d246cfcc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/add-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/add-post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/edit-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/edit-profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/signin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/stats.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/stats.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/edit-profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/sass/edit-profile.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +43,7 @@
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="Sass File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -41,6 +70,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.protractor.protractor_package" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -54,6 +84,26 @@
   </component>
   <component name="RunManager">
     <configuration default="true" type="js.build_tools.grunt">
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
@@ -85,17 +135,40 @@
       <workItem from="1618503416723" duration="51000" />
       <workItem from="1618652161103" duration="46000" />
       <workItem from="1618823808049" duration="14000" />
+      <workItem from="1619024688004" duration="3079000" />
+      <workItem from="1619079014872" duration="6000" />
+      <workItem from="1619123208188" duration="18000" />
+      <workItem from="1619368778887" duration="8000" />
+      <workItem from="1619434211442" duration="8000" />
+      <workItem from="1620077528188" duration="3000" />
+      <workItem from="1620118706477" duration="594000" />
+      <workItem from="1620213362098" duration="13370000" />
+      <workItem from="1620462097358" duration="4000" />
+      <workItem from="1620543734016" duration="6000" />
+      <workItem from="1620645759839" duration="6970000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616438465216">
+    <state x="695" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620215791212">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616438465216" />
+    <state x="695" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1620215791212" />
     <state x="738" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1616527011894">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -104,6 +177,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617557418629" />
+    <state width="1899" height="108" key="GridCell.Tab.0.bottom" timestamp="1620239953443">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="108" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1620239953443" />
+    <state width="1899" height="108" key="GridCell.Tab.0.center" timestamp="1620239953443">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="108" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1620239953443" />
+    <state width="1899" height="108" key="GridCell.Tab.0.left" timestamp="1620239953443">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="108" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1620239953443" />
+    <state width="1899" height="108" key="GridCell.Tab.0.right" timestamp="1620239953443">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="108" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1620239953443" />
     <state x="559" y="164" key="SettingsEditor" timestamp="1616591227239">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

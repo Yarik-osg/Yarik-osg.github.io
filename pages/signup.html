@@ -8,19 +8,19 @@
     <h1>Sign up</h1>
     <form>
         <label>Username</label>
-        <input type = "text" class="input-box" placeholder="username">
+        <input type = "text" class="input-box" placeholder="username" id="name">
         <label>Email</label>
-        <input type = "email" class="input-box" placeholder="smth@smth.com">
+        <input type = "email" class="input-box" placeholder="smth@smth.com" id="email">
         <label>Password</label>
-        <input type = "password" class="input-box" placeholder="password">
+        <input type = "password" class="input-box" placeholder="password" id="password">
         <p>
                 <span>
                     <input type="checkbox">
                 </span>
             Show password
         </p>
-      <a href="index.html">
-        <button type = "button"  class = "signup-btn">Sign up</button>
+      <a>
+        <button type = "button"  class = "signup-btn" id="regButton">Sign up</button>
       </a>
 
         <hr>
@@ -28,4 +28,37 @@
     </form>
 </div>
 </body>
+<script>
+  document.getElementById("regButton").addEventListener("click", grabData);
+  function grabData() {
+    const storedName=document.getElementById("name").value
+    const storedEmail=document.getElementById("email").value
+    const storedPassword=document.getElementById("password").value
+    addUser(storedName,storedEmail,storedPassword)
+    console.log(storedName,storedEmail,storedPassword)
+  }
+  function addUser(storedName,storeEmail,storedPassword) {
+    const Data = {
+      name: storedName,
+      email: storeEmail,
+      stats_user: 0,
+      count_of_messages: 0,
+      password: storedPassword
+    };
+    console.log(Data)
+    const jsonString = JSON.stringify(Data);
+    const request = new XMLHttpRequest();
+    request.open("POST", "http://127.0.0.1:8082/register", true);
+    request.setRequestHeader("Content-Type", "application/json");
+    request.onload = function () {
+      if (this.status === 200) {
+        const user = JSON.parse(this.responseText);
+        console.log(user);
+        localStorage.setItem("UserName",storedName)
+        window.location.href="index.html"
+      }
+    }
+    request.send(jsonString)
+  }
+</script>
 </html>
