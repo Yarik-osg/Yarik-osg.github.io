@@ -8,54 +8,21 @@
     <h1>Sign in</h1>
     <form>
         <label>Username</label>
-        <input type = "text" class="input-box" placeholder="username" id="name">
+        <input type = "text" class="input-box" placeholder="username">
         <label>Password</label>
-        <input type = "password" class="input-box" placeholder="password" id="password">
+        <input type = "password" class="input-box" placeholder="password">
         <p>
                 <span>
                     <input type="checkbox">
                 </span>
             Show password
         </p>
-      <a>
-
-        <button type = "button" class = "signup-btn" id="logButton">Sign in</button>
+      <a href="index.html">
+        <button type = "button" class = "signup-btn">Sign in</button>
       </a>
         <hr>
         <p>Don't have an account? <a href="signup.html">Sign up</a> </p>
     </form>
 </div>
 </body>
-<script>
-  document.getElementById("logButton").addEventListener("click", grabData);
-  function grabData() {
-    const storedName=document.getElementById("name").value
-    const storedPassword=document.getElementById("password").value
-    console.log(storedName,storedPassword)
-    const namePass=storedName+":"+storedPassword
-    let encodeNamePass="Basic "+ btoa(namePass)
-    console.log(namePass)
-    console.log(encodeNamePass)
-    login(encodeNamePass,storedName)
-
-  }
-  function login(encodeNamePass,storedName){
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'http://127.0.0.1:8082/login', true);
-    // xhr.setRequestHeader("Access-Control-Allow-Origin", "http://127.0.0.1:8082");
-    xhr.setRequestHeader('Authorization',encodeNamePass);
-    // xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.onload = function (){
-      if(this.status === 200){
-        const user = this.responseText;
-        console.log(user);
-        localStorage.setItem("Basic",encodeNamePass)
-        localStorage.setItem("UserName",storedName)
-        window.location.href="index.html"
-      }
-    }
-    xhr.send();
-
-  }
-</script>
 </html>
