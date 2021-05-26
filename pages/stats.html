@@ -10,37 +10,14 @@
 <body>
 
 <div class="header">
-  <div class="heading">
-    Notera</div>
-  <div class="header-navbar-content">
-    <a href="index.html"> Головна</a>
-  </div>
-  <div class="header-navbar-content">
-    <a href="search.html">
-      Пошук
-    </a>
-  </div>
-  <!--      <div class="navbar-content">-->
-  <!--        Друзі-->
-  <!--      </div>-->
-  <div class="header-navbar-content">
-    <a href="stats.html">
-      Статистика
-    </a>
-  </div>
-  <div class="header1-navbar-content">
-    <a href="stats.html">
-      . . .
-    </a>
-  </div>
 
+  <div class="heading">Notera</div>
   <div>
     <a href="profile.html">
       <div class="profile-container">
         <img src="../img/img.png" alt="Profile photo">
       </div>
     </a>
-
     <a href="signin.html">
       <div class="profile-container">
         <span id="username">Sign out</span>
@@ -48,7 +25,6 @@
     </a>
   </div>
 </div>
-
 
 
 <div class="app-wrapper">
@@ -96,7 +72,7 @@
           </div>
             </a>
           <a href="profile.html">
-            <div class="user-name" id="UserName1"></div>
+            <div class="user-name">Пальчевський</div>
           </a>
 
           <div class="edited-date">28.14.88</div>
@@ -110,7 +86,7 @@
             </div>
           </a>
           <a href="profile.html">
-            <div class="user-name" id="UserName2"></div>
+            <div class="user-name">Пальчевський</div>
           </a>
           <div class="edited-date">22.14.88</div>
         </div>
@@ -124,7 +100,7 @@
             </div>
           </a>
           <a href="profile.html">
-            <div class="user-name" id="UserName3"></div>
+            <div class="user-name">Пальчевський</div>
           </a>
 
           <div class="edited-date">11.14.88</div>
@@ -198,10 +174,4 @@
 <!--  </div>-->
 <!--</footer>-->
 </body>
-<script>
-  const UserName=localStorage.getItem("UserName")
-  document.getElementById('UserName1').innerHTML = UserName;
-  document.getElementById('UserName2').innerHTML = UserName;
-  document.getElementById('UserName3').innerHTML = UserName;
-</script>
 </html>

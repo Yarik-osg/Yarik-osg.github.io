@@ -8,38 +8,16 @@
 </head>
 <body>
 
-<div class="header">
-  <div class="heading">
-    Notera</div>
-  <div class="header-navbar-content">
-    <a href="index.html"> Головна</a>
-  </div>
-  <div class="header-navbar-content">
-    <a href="search.html">
-      Пошук
-    </a>
-  </div>
-  <!--      <div class="navbar-content">-->
-  <!--        Друзі-->
-  <!--      </div>-->
-  <div class="header-navbar-content">
-    <a href="stats.html">
-      Статистика
-    </a>
-  </div>
-  <div class="header1-navbar-content">
-    <a href="stats.html">
-      . . .
-    </a>
-  </div>
 
+<div class="header">
+
+  <div class="heading">Notera</div>
   <div>
     <a href="profile.html">
       <div class="profile-container">
         <img src="../img/img.png" alt="Profile photo">
       </div>
     </a>
-
     <a href="signin.html">
       <div class="profile-container">
         <span id="username">Sign out</span>
@@ -47,7 +25,6 @@
     </a>
   </div>
 </div>
-
 
 
 <div class="app-wrapper">
@@ -84,7 +61,7 @@
         <div class="photo-left">
           <img class="photo" src="../img/img.png"/>
         </div>
-        <h4 class="name" id="UserName1"></h4>
+        <h4 class="name">Пальчевський</h4>
         <p class="info">Політик,Метросексуал</p>
         <p class="info">peremoga.palchevskogo.com</p>
         <div class="stats">
@@ -122,8 +99,36 @@
         </ul>
 
         <span class="follow">Follow</span>
-        <div id="post1">
+        <div class="ann-container">
+          <div class="post-header">
+            <div class="post-user-img"><img src="../img/img.png" alt=""></div>
+          </div>
+          <div class="post-content">
+            <div class="post-user">
+              <div class="post-user-data">
+                <div class="ann-name">Пальчевський</div>
+                <div class="ann-date">12.03.21</div>
+              </div>
+            </div>
+            <div class="post-vmist">
+              <a href="post.html">
+                <h2>Post1</h2>
+                <p>Some interesting description. Lorem ipsum
+                  Some interesting description. Lorem ipsum
+                  Some interesting description. Lorem ipsum
+                  Some interesting description. Lorem ipsum
+                  Some interesting description. Lorem ipsum
+                  Some interesting description. Lorem ipsum
+                  Some interesting description. Lorem ipsum
+                  Some interesting description. Lorem ipsum
+                  Some interesting description. Lorem ipsum
+                  Some interesting description. Lorem ipsum
+                  Some interesting description. Lorem ipsum
+                </p>
+              </a>
+            </div>
 
+          </div>
         </div>
       </div>
     </div>
@@ -189,57 +194,4 @@
 <!--      </div>-->
 <!--    </footer>-->
 </body>
-<script>
-  const UserName=localStorage.getItem("UserName")
-  loadUser()
-
-  function loadUser() {
-    console.log(localStorage.getItem("Basic"))
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'http://127.0.0.1:8082/note', true);
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.setRequestHeader("Access-Control-Allow-Origin", "http://127.0.0.1:8082");
-    xhr.onload = function () {
-      if (this.status === 200) {
-        const note = JSON.parse(this.responseText);
-        console.log(note);
-        let output = '';
-        for (let i in note) {
-          output += '<div class="ann-container">' +
-            '<div class="post-header">' +
-            '<div class="post-user-img">' + '<img src="../img/img.png" alt="">' + '</div>' +
-            '</div>' +
-            '<div class="post-content">' +
-            '<div class="post-user">' +
-            '<div class="post-user-data">' +
-            '<div class="ann-name">' +
-            '<a href="profile.html">' +
-            UserName +
-            '</a>' +
-            '</div>' +
-            '<div class="ann-date">' + '12.03.21' + '</div>' +
-            '</div>' +
-            '<div class="post-user-edit">' +
-            '<a href="add-post.html">' +
-            'edit' +
-            '</a>' + '</div>' +
-            '</div>' +
-            '<div class="post-vmist">' +
-            '<a href="post.html">' +
-            '<h2>' + note[i].name + '</h2>' +
-            '<p id="post1">' + note[i].description +
-            '</p>' +
-            '</a>' +
-            '</div>' +
-            '</div>' +
-            '</div>' +
-            '</div>';
-          document.getElementById('post1').innerHTML = output;
-          document.getElementById('UserName1').innerText=UserName
-        }
-      }
-    }
-    xhr.send();
-  }
-</script>
 </html>
